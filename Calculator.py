@@ -10,7 +10,7 @@ class Calculator:
         self.input_text = ""
 
         # Display
-        self.display = tk.Entry(root, font=("Arial", 32), bg="black", fg="white",
+        self.display = tk.Entry(root, font=("Arial", 32), bg="black", fg="black",
                                 bd=0, justify="right", insertbackground="white")
         self.display.pack(fill="both", padx=10, pady=20, ipady=10)
         self.display.config(state="readonly")
@@ -36,10 +36,10 @@ class Calculator:
                     continue
 
                 bg_color = "#333333"
-                fg_color = "red"
+                fg_color = "black"
                 if text in "/*-+%= ":
                     if text in "/*-+":
-                        bg_color = "#FF9F0A"  # Orange
+                        bg_color = "#white"  # Orange
                     elif text == "%":
                         bg_color = "#FF9F0A"
                     else:
