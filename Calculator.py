@@ -20,7 +20,7 @@ class Calculator:
         btn_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
         buttons = [
-            ["AC", "DEL", "%", "/"],
+            ["AC", "DEL", "/"],
             ["7", "8", "9", "*"],
             ["4", "5", "6", "-"],
             ["1", "2", "3", "+"],
@@ -36,10 +36,10 @@ class Calculator:
                     continue
 
                 bg_color = "#333333"
-                fg_color = "black"
+                fg_color = "white"
                 if text in "/*-+%= ":
                     if text in "/*-+":
-                        bg_color = "#white"  # Orange
+                        bg_color = "#white" 
                     elif text == "%":
                         bg_color = "#FF9F0A"
                     else:
